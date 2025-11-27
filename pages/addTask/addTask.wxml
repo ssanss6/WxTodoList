@@ -1,0 +1,30 @@
+<!--pages/addTask/addTask.wxml-->
+<view class="chooseBox">
+  <view class="tips">选择标签:</view>
+  <view class="label" style="background-color: {{labels[CurrentLabelIndex][1].color}};"  bind:tap="chooseLabel" >
+    <image src="{{CurrentLabel[1].icon}}" mode=""/>
+    <text>{{CurrentLabel[0]}}</text>
+  </view>
+  
+  
+  <view class="priorities" >
+    <view class="tips">优先级:</view>
+    <view class="priority" bind:tap="choosePriority">
+      {{CurrentPriority}}
+    </view>
+  </view>  
+</view>
+<view class="InputTaskBox">
+  <textarea type="text" placeholder="请输入新任务..." bindinput="handleInut" value="{{newTaskContent}}"/>
+  <!-- <form bindsubmit="">
+    <label for="">标签</label>
+    <select name="label" id="">
+    <option value="工作">工作</option>
+    <option value="生活">生活</option>
+    <option value="学习">学习</option>
+  </select>
+  </form> -->
+</view>
+
+<button class="addBtn" bindtap="addTask" type="primary">添加任务</button>
+

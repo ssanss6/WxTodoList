@@ -1,0 +1,56 @@
+<wxs module="sl" src="/utils/SLfont.wxs" >
+</wxs>
+<view class="search">
+  <image src="/asset/icon/sousuo.png" mode=""/>
+  <input type="text" placeholder="搜索..." bindinput="searchInput" />
+  <button bind:tap="searchTask">搜索</button>
+</view>
+<view class="topBox">
+  <button bindtap="JumpaddTask" >添加任务</button>
+</view>
+<view class="smallBox">
+  <checkbox bind:tap="allSelect" />全选
+  <button class="allDelete" bindtap="allDelete" >批量删除</button>
+  <view class="filter">
+    <image src="/asset/icon/shaixuan.png" mode=""/>
+    <picker mode="multiSelector" range="{{choosefilterList}}" bindchange="filterSelectorChange">
+      <view class="label"  >
+        <image src="/asset/icon/biaoqian.png" mode=""/>
+        
+        <text>{{choosefilterList[0][pickIndex[0]]}} + {{choosefilterList[1][pickIndex[1]]}}</text>
+      </view>
+      
+    </picker>
+  </view>
+</view>
+<view class="todo" wx:for="{{taskList}}" wx:key="index">
+<view class="box1">
+  <view class="label" style="background-color: {{item.label[1].color}};" >
+    <image src="{{item.label[1].icon}}" mode=""/>
+    <text>{{item.label[0]}}</text>
+  </view>
+  <view class="pri">
+    <view class="tips">优先级:</view>
+    <view class="priority">
+      {{item.priority}}
+    </view>
+  </view>
+  <view class="cond">
+    <view>状态:</view>
+    <picker range="{{conditions}}" data-taskid="{{item.id}}" mode="selector" bindchange="changeCondition">
+      {{item.condition}}
+    </picker>
+  </view>
+</view>
+  <view class="box2">
+    <checkbox checked="{{item.Selected}}" bindtap="toggleTaskStatus" data-taskid="{{item.id}}" />
+  <view class="content"><text>{{sl.SLfont(item.text)}}</text></view>
+  <button class="editBtn" bindtap="JumpeditDetail" data-taskid="{{item.id}}" >编辑</button>
+  <button class="delBtn" bindtap="deleteTask" data-taskid="{{item.id}}">删除</button>
+  </view>
+</view>
+<view class="noTask" wx:if="{{taskList.length == 0 && (pickIndex[0] == 0 && pickIndex[1] == 0) }}">
+  <image src="/asset/icon/bianji.png" mode=""/>
+  <text class="NTtitle">没有任务安排</text>
+  <text class="tips">想做点什么？可以先写下来</text>
+</view>

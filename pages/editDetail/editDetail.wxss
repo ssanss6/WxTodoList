@@ -1,0 +1,29 @@
+/* pages/editDetail/editDetail.wxss */
+page{
+  
+}
+
+.bigbox{
+  width: 750rpx;
+
+}
+
+.edit{
+  
+  background-color: rgb(170, 170, 170);
+  margin: 10rpx;
+  margin-left: 50rpx;
+  background-color: #ffffff;
+  width: 600rpx;
+  height: 1100rpx;
+  display: flex;
+  padding: 30rpx;
+  border-radius: 10px;
+  border:#daecf7 solid 3px;
+}
+
+.saveBtn{
+  margin-top: 50rpx;
+  background-color: #00be10;
+  color: #ffffff;
+}

@@ -1,0 +1,11 @@
+var SLfont = function(str){
+  var res = str
+  if(str.length > 20){
+    res = res.slice(0,20) + "..."
+  }
+  return res;
+}
+
+module.exports={
+  SLfont:SLfont
+}

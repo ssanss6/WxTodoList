@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/contentDetail/contentDetail",
+    "pages/editDetail/editDetail",
+    "pages/tomTime/tomTime",
+    "pages/statistics/statistics",
+    "pages/shezhi/shezhi",
+    "pages/addTask/addTask"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "个人任务清单",
+    "navigationBarBackgroundColor": "#2c3e50"
+  },
+  "tabBar": {
+    "color":"#DADADA",
+    "selectedColor":"#2c3e50",
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text": "任务",
+        "iconPath": "/asset/tabbar/a-querenqueding.png",
+        "selectedIconPath": "/asset/tabbar/a-querenqueding-selected.png"
+      },
+      {
+        "pagePath": "pages/tomTime/tomTime",
+        "text": "专注",
+        "iconPath": "/asset/tabbar/shijian.png",
+        "selectedIconPath": "/asset/tabbar/shijian-selected.png"
+      },
+      {
+        "pagePath": "pages/statistics/statistics",
+        "text": "统计",
+        "iconPath": "/asset/tabbar/zhuzhuangtu.png",
+        "selectedIconPath": "/asset/tabbar/zhuzhuangtu-selected.png"
+      },
+      {
+        "pagePath": "pages/shezhi/shezhi",
+        "text": "设置",
+        "iconPath": "/asset/tabbar/shezhi.png",
+        "selectedIconPath": "/asset/tabbar/shezhi-selected.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

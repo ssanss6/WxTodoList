@@ -1,0 +1,5 @@
+<!--pages/editDetail/editDetail.wxml-->
+<view class="bigbox">
+  <textarea class="edit" value="{{taskContent}}" bindinput="handleInut" maxlength='-1' />
+  <button class="saveBtn" bind:tap="saveBtn">保存修改</button>
+</view>

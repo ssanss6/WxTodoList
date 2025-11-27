@@ -1,0 +1,5 @@
+<!--pages/statistics/statistics.wxml-->
+<view>
+  您累计创建{{CreatTaskCount}}个任务
+  当前任务量:{{totalTask}}
+</view>

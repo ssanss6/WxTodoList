@@ -1,0 +1,205 @@
+page{
+  background-color: #f0f8fb;
+}
+.search{
+  width: 668rpx;
+  height: 60rpx;
+  margin: 10rpx;
+  margin-left: 50rpx;
+  display: flex;
+  margin-top: 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.search input{
+  width: 400rpx;
+
+}
+
+.search image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search button{
+  position: absolute;
+  right: 0;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  width: 140rpx;
+  font-size: 20rpx;
+}
+
+.topBox{
+  margin: 10rpx;
+  margin-left: 50rpx;
+  background-color: #ffffff;
+  width: 600rpx;
+  height: 100rpx;
+  display: flex;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  border:#daecf7 solid 3rpx;
+}
+
+.topBox button{
+  color: white;
+  font-weight: 10rpx;
+  background-color: #daecf7;
+  height: 100rpx;
+  width: 300rpx;
+  
+}
+
+.smallBox{
+  position: relative;
+  margin-left: 50rpx;
+  width: 600rpx;
+  height: 80rpx;
+  display: flex;
+}
+
+.smallBox .allDelete{
+  position: absolute;
+  left: 150rpx;
+  height: 50rpx;
+  width: 175rpx;
+  font-size: 20rpx;
+  background-color: red;
+  color: white;
+}
+
+.filter{
+  margin-left: 220rpx;
+  display: flex;
+}
+
+.filter image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.filter .label{
+  background-color: white;
+  border: #daecf7 solid 4rpx;
+  width: 200rpx;
+  height: 50rpx;
+  
+}
+.filter .label text{
+  font-size: 24rpx;
+  font-weight: bolder;
+}
+
+.todo{
+  
+  margin-left: 50rpx;
+  background-color: #ffffff;
+  width: 600rpx;
+  height: 160rpx;
+  
+  padding: 30rpx;
+  border-radius: 10rpx;
+  border:#daecf7 solid 6rpx;
+  margin-top: 10rpx;
+}
+.todo .box1{
+  display: flex;
+
+}
+
+.pri{
+  margin-left: 100rpx;
+  display: flex;
+}
+
+.priority{
+  font-weight: bold;
+}
+
+.cond{
+  display: flex;
+  margin-left: 85rpx;
+}
+
+.label{
+  
+  border-radius: 15rpx;
+  color: rgb(255, 255, 255);
+  width: 120rpx;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+}
+
+.label text{
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.label image{
+  
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.todo .box2{
+  display: flex;
+}
+.todo checkbox{
+  margin-top: 50rpx;
+}
+.todo .content{
+  background-color: #f5faff;
+  width: 260rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  color: skyblue;
+  margin-top: 10rpx;
+}
+
+.todo button{
+  width: 145rpx;
+  height: 60rpx;
+  font-size: 20rpx;
+  border-radius: 10rpx;
+  margin-top: 50rpx;
+  
+}
+.editBtn{
+  color: #f1b47b;
+  background-color: #fff3e0;
+  border: #f1e7d7 solid 4rpx;
+  
+}
+.delBtn{
+  background-color: #e64340;
+  color: white;
+  font-weight: 10;
+}
+
+.noTask{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.noTask image{
+  width: 250rpx;
+  height: 250rpx;
+  
+  
+}
+.NTtitle{
+  font-size: 40rpx;
+  color: rgb(117, 117, 117);
+}
+
+.noTask .tips{
+  color: #c9c9c9;
+  font-size: 25rpx;
+}
